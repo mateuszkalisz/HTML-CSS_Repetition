@@ -1,0 +1,27 @@
+div + div {
+    font-family: arial;
+    color: red;
+    font-size: 20px;
+}
+
+p + p {
+    color: yellow;
+}
+
+p + p + p {
+color: pink;
+font-weight: bold;
+}
+
+p ~ p {
+    color: violet;
+}
+
+p span {
+    color: black;
+    font-size: 30px;
+}
+
+div * p {
+    color: green;
+}
