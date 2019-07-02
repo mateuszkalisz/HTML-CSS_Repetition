@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+font-size: 20px;
+}
+
+div.wrapper{
+max-width: 1200px;
+min-height: 30vh;
+max-height: 70vh;
+margin: 0 auto;
+background-color: blue;
+overflow: hidden;
+}
+
+.first{
+    padding: 100px;
+    font-size: 0.6rem;
+    border: 3px dotted black;
+    margin-bottom: 50px;
+    background-color: green;
+}
+
+div.second{
+    padding: 30px;
+    background-color: red;
+    border: 5px solid black;
+    font-size: 0.6rem;
+}
