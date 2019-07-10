@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-fox;
+}
+
+.wrapper{
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.red{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    flex: 0 1 25%;
+}
+
+.middle{
+    flex: 0 1 50%;
+}
+
+.blue{
+    background-color: blue;
+    height: 50%;
+    width: 100%;
+}
+
+.yellow{
+    background-color: yellow;
+    height: 50%;
+    width: 100%;
+}
+
+.green{
+    background-color: green;
+    height: 100%;
+    width: 100%;
+    flex: 0 1 25%;
+}
