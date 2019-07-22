@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation */
+
+nav{
+    padding: 10px;
+    text-align: right;
+}
+
+nav a{
+display: inline-block;
+text-decoration: none;
+color: #555;
+font-size: 2rem;
+text-transform: uppercase;
+padding: 10px;
+margin: 20px;
+transition: 0.2s;
+}
+
+nav a:hover {
+border-bottom: 2px solid #555;
+}
+
+nav a.reservation{
+    font-size: 2.4rem;
+    border: 2px solid #555;
+    margin-right: 100px;
+    margin-left: 90px;
+    letter-spacing: 2px;
+}
+
+nav a.reservation:hover{
+    background-color: royalblue;
+    color: white;
+    border-color: royalblue;
+}
+
+/* Header */
+
+header{
+    background-image: url("auto2.jpg");
+    height: 40vh;
+    background-size: cover;
+}
+
+h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    line-height: 40vh;
+    background-color: rgba(0,0,0,50%);
+}
