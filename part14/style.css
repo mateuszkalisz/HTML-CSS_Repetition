@@ -60,3 +60,55 @@ h1{
     line-height: 40vh;
     background-color: rgba(0,0,0,50%);
 }
+
+/* czesc glowna */
+
+main{
+    max-width: 1440px;
+    margin: 5vh auto;
+}
+
+main p.description{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 30px 50px 30px;
+}
+
+.features{
+    font-size: 0;
+}
+
+main div.feature{
+    display: inline-block;
+    width: 33.33%;
+}
+
+main div.image{
+    height: 200px;
+    background-color: royalblue;
+    margin: 0 30px;
+}
+
+main div.image:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+main div h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+}
+
+/* Stopka */
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer p{
+    font-size: 1.8rem;
+    padding: 20px;
+    text-align: center;
+}
