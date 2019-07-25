@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    /* width: 300px; */
+    overflow: hidden;
+    /* background-color: black; */
+}
+
+.item1{
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+    float: left;
+    border: 3px solid red;
+}
+
+.item2{
+    width: 20%;
+    height: 300px;
+    background-color: orange;
+    float: left;
+}
+
+.item3{
+    width: 30%;
+    height: 250px;
+    background-color: green;
+    float: left;
+}
