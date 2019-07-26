@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        background-color: black;
+        /* height: 100px; */
+        /* overflow: hidden; */
+    }
+
+    nav ul{
+        list-style: none;
+    }
+
+    nav li{
+        float: left;
+
+    }
+
+    nav a{
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        margin: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .clear{
+        clear: both;
+        height: 0;
+    }
+    
+    .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#">cvdgfd1</a></li>
+                <li><a href="#">blabla</a></li>
+                <li><a href="#">xxxxx</a></li>
+                <li><a href="#">yyyy</a></li>
+                <li><a href="#">zzzz</a></li>
+                <!-- <div class="clear"></div> -->
+            </ul>
+        </nav>
+
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nobis nulla inventore id deserunt! Cum qui fugiat ipsa in, voluptates at incidunt hic? Delectus illo molestias temporibus doloremque ullam. Nisi dolor, exercitationem sequi, id doloribus soluta magnam delectus voluptate distinctio ipsa enim odio. Sit ipsa, facere amet quasi aliquam debitis aliquid itaque nemo, laudantium deleniti eveniet dolor voluptatibus corrupti minima sunt ex enim. Repudiandae autem animi laboriosam architecto deleniti libero veniam dolore explicabo molestiae? Recusandae doloribus libero aspernatur esse. Ex mollitia deserunt pariatur dicta suscipit? Tempore ratione repudiandae illum assumenda amet quasi provident porro, repellat iste id molestiae doloribus veritatis?</p>
+        </section>
+    </div>
+</body>
+</html>
