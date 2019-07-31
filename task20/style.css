@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header div{
+    width: 20%;
+    height: 180px;
+    background-color: black;
+    margin: 2.5%;
+    float: left;
+    transition: 0.3s;
+}
+
+header div:nth-child(1){
+    background-color: aquamarine;
+}
+
+header div:nth-child(1):hover{
+    background-color: yellowgreen;
+}
+
+header div:nth-child(2){
+    background-color: rebeccapurple;
+}
+
+header div:nth-child(2):hover{
+    background-color: salmon;
+}
+
+header div:nth-child(3){
+    background-color: coral;
+}
+
+header div:nth-child(3):hover{
+    background-color: crimson;
+}
+
+header div:nth-child(4){
+    background-color: burlywood;
+}
+
+header div:nth-child(4):hover{
+    background-color: palevioletred;
+}
+
+nav{
+    background-color: gray;
+    padding: 10px 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    width: 20%;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 24px;
+    color: white;
+    border: 3px solid darkgray;
+}
+
+nav ul li a:hover{
+    color: darkgray;
+}
