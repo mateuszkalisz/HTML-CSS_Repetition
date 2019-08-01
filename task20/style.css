@@ -100,17 +100,38 @@ footer p {
     font-size: 3rem;
 }
 
+.blog{
+    padding: 50px;
+}
+
 main{
 float: left;
 width: 65%;
-padding: 50px;
 }
 
 aside{
 float: left;
-background-color: brown;
+background-color: lightgray;
 width: 35%;
 height: 200px;
+}
+
+section.contact{
+    padding: 20px;
+    font-size: 2rem;
+}
+
+section.contact ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+section.contact li{
+    margin: 15px 0;
+}
+
+article{
+    padding-right: 30px;
 }
 
 article img{
@@ -121,4 +142,15 @@ article img{
 
 article p{
     padding-top: 20px;
+    text-align: justify;
+}
+
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+
+.contact i{
+    margin-right: 5px;
+
 }
