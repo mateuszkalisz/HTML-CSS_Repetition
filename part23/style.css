@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    min-height: 200vh;
+}
+
+div.bar{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+div.bar i{
+    font-size: 3rem;
+    color: gray;
+}
+
+div.bar:hover i{
+    color: black
+}
+
+p{
+    font-size: 1.8rem;
+    padding-right: 100px;
+    text-align: justify;
+}
