@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 360-640px */
+
+p{
+    text-align: center;
+    line-height: 100vh;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 0 5%;
+}
+
+@media(min-width: 361px){
+
+    p{
+        font-size: 32px;
+        color: brown;
+    }
+}
+
+@media(min-width: 500px){
+    p{
+        font-size: 34px;
+        color: red;
+    }
+}
+
+@media(min-width: 800px){
+    p{
+        font-size: 38px;
+        color: orange;
+    }
+}
+
+@media(min-width: 1024px){
+    p{
+        font-size: 42px;
+        color: yellow;
+    }
+}
+
+@media(orientation: portrait){
+    p{
+        background-color: gray;
+    }
+}
+
+@media(orientation: landscape){
+    p{
+        background-color: darkcyan;
+        color: white;
+    }
+}
+
+@media(orientation: landscape) and (min-width: 600px){
+    p{
+        background-color: black;
+        color: pink;
+    }
+}
