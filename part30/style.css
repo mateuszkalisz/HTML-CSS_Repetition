@@ -12,6 +12,23 @@ p{
     font-size: 28px;
     text-transform: uppercase;
     padding: 0 5%;
+    display: block;
+}
+
+p.p2{
+    display: none;
+}
+
+p.p3{
+    display: none;
+}
+
+p.p4{
+    display: none;
+}
+
+p.p5{
+    display: none;
 }
 
 @media(min-width: 361px){
@@ -20,12 +37,12 @@ p{
         font-size: 32px;
         color: brown;
     }
-}
-
-@media(min-width: 500px){
-    p{
-        font-size: 34px;
-        color: red;
+    p.p1{
+        display: none;
+    }
+    p.p2{
+        display: block;
+        color: blue;
     }
 }
 
@@ -34,12 +51,28 @@ p{
         font-size: 38px;
         color: orange;
     }
+    p.p2{
+        display: none;
+    }
+    p.p3{
+        display: block;
+        color: yellow;
+
+    }
 }
 
 @media(min-width: 1024px){
     p{
         font-size: 42px;
         color: yellow;
+    }
+    p.p3{
+        display: none;
+    }
+    p.p4{
+        display: block;
+        color: red;
+        text-decoration: underline;
     }
 }
 
@@ -52,13 +85,12 @@ p{
 @media(orientation: landscape){
     p{
         background-color: darkcyan;
-        color: white;
     }
 }
 
-@media(orientation: landscape) and (min-width: 600px){
+/* @media(orientation: landscape) and (min-width: 600px){
     p{
         background-color: black;
         color: pink;
     }
-}
+} */
