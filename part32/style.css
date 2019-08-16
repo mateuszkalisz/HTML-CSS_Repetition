@@ -1,0 +1,285 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 90vh;
+    position: relative;
+    background-color: #29a6dc;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header>*{
+    position: absolute;
+}
+
+header img{
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+header div.welcome{
+    top: 10%;
+    left: 5%;   
+    right: 5%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    z-index: 1;
+}
+
+header p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header h1{
+    font-size: 20px;
+}
+
+header h2{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+header button{
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (orientation: landscape){
+    header img{
+        height: 90%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    header div.welcome{
+        top: 15%;
+        left: 0%;
+        right: 40%;
+    }
+
+    header button{
+        margin-top: 35px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+@media (orientation: portrait) AND (min-width: 360px){
+    header p{
+        font-size: 50px;
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+    
+    header h2{
+        font-size: 24px;
+    }
+    header button{
+        font-size: 20px;
+        line-height: 46px;
+    }
+    header img{
+    right: -10%;
+    }
+}
+
+@media (orientation: portrait) AND (min-width: 600px){
+    header div.welcome{
+        top: 5%;
+        left: 0%;
+        right: 0%;
+    }
+
+    header p{
+        font-size: 60px;
+    }
+
+    header h1{
+        font-size: 26px;
+    }
+    
+    header h2{
+        font-size: 26px;
+    }
+    header button{
+        font-size: 22px;
+        line-height: 44px;
+        padding: 0 20px;
+    }
+    header img{
+    height: 57%;
+    right: 10%;
+    bottom: -3%;
+    }
+}
+
+@media (orientation: portrait) AND (min-width: 768px){
+    
+    header p{
+        font-size: 70px;
+    }
+
+    header h1{
+        font-size: 34px;
+    }
+    
+    header h2{
+        font-size: 34px;
+    }
+    header button{
+        font-size: 26px;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+    header img{
+    height: 57%;
+    right: 0;
+    bottom: -3%;
+    }
+}
+
+@media (orientation: landscape) AND (min-width: 600px){
+    header div.welcome{
+        top: 20%;
+        left: 0%;
+        right: 55%;
+    }
+    header p{
+        font-size: 55px;
+    }
+
+    header h1{
+        font-size: 28px;
+    }
+    
+    header h2{
+        font-size: 28px;
+    }
+
+    header button{
+        font-size: 22px;
+        line-height: 46px;
+        padding: 0 20px;
+    }
+
+    header img{
+        height: 85%;
+        right: -20%;
+        }
+}
+
+@media (orientation: landscape) AND (min-width: 800px){
+    header div.welcome{
+        top: 20%;
+        left: 0%;
+        right: 55%;
+    }
+    header p{
+        font-size: 60px;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+    
+    header h2{
+        font-size: 30px;
+    }
+
+    header button{
+        font-size: 24px;
+        line-height: 48px;
+        padding: 0 25px;
+    }
+
+    header img{
+        height: 90%;
+        right: -15%;
+        }
+}
+
+@media (min-width: 800px){
+    header button:hover{
+        color: #111;
+        background-color: rgba(255,255,255,0.6);
+        border-color: #111;
+    }
+}
+
+@media (orientation: landscape) AND (min-width: 1024px){
+    header div.welcome{
+        top: 15%;
+        left: 0%;
+        right: 50%;
+    }
+    header p{
+        font-size: 70px;
+    }
+
+    header h1{
+        font-size: 34px;
+    }
+    
+    header h2{
+        font-size: 34px;
+    }
+    header button{
+        font-size: 26px;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+    header img{
+        height: 95%;
+        right: -10%;
+        }
+}
+
+@media (orientation: landscape) AND (min-width: 1444px){
+    header div.welcome{
+        top: 15%;
+        left: 0%;
+        right: 50%;
+    }
+    header p{
+        font-size: 76px;
+    }
+
+    header h1{
+        font-size: 38px;
+    }
+    
+    header h2{
+        font-size: 38px;
+    }
+    header button{
+        font-size: 30px;
+        line-height: 52px;
+        padding: 0 30px;
+    }
+    header img{
+        height: 98%;
+        right: -10%;
+        }
+}
