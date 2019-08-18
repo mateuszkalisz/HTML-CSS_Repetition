@@ -53,7 +53,7 @@ header h1{
 header h2{
     font-size: 20px;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 header button{
@@ -385,5 +385,124 @@ header button{
     .features{
         max-width: 1440px;
         margin: 50px auto 0 auto;
+    }
+}
+
+/* sekcja 2 */
+
+.portfolio{
+    text-align: center;
+    background-color: black;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.portfolio h1{
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+}
+
+.project{
+    margin-bottom: 20px;
+}
+
+.web img{
+    width: 100%;
+}
+
+.about{
+    color: white;
+    font: 'Saira', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 10px 20px 10px 0;
+}
+
+.about h2{
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    text-indent: 20px;
+    /* padding-left: 20px; */
+}
+
+.about p{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.project:nth-child(2n){
+    background-color: #29a6dc;
+}
+
+.project:nth-child(2n-1){
+    background-color: orangered;
+}
+
+@media (orientation: portrait) AND (min-width: 640px){
+    .portfolio h1{
+        padding: 30px 0;
+        font-size: 34px;
+    }
+
+    .about h2{
+        font-size: 26px;
+    }
+
+    .about p{
+        font-size: 18px;
+    }
+}
+
+@media (orientation: landscape){
+    
+    .web,
+    .about{
+        float: left;
+        width: 50%;
+    }
+
+    .web img{
+        display: block;
+    }
+
+    .project:nth-child(2n-1) .web{
+        float: right;
+    }
+    
+    .portfolio .project{
+    margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px){
+    .portfolio h1{
+        padding: 30px 0;
+        font-size: 44px;
+    }
+
+    .about h2{
+        padding-top: 30px;
+        font-size: 34px;
+    }
+
+    .about p{
+        padding-top: 15px;
+        font-size: 24px;
+    }
+    .portfolio .project{
+        margin-bottom: 60px;
+        }
+}
+
+@media (min-width: 1440px){
+    .portfolio{
+        max-width: 1440px;
+        margin: 20px auto 0 auto;
     }
 }
