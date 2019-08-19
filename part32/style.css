@@ -506,3 +506,81 @@ header button{
         margin: 20px auto 0 auto;
     }
 }
+
+/* sekcja slogan */
+
+.slogan{
+    text-align: center;
+    background-image: url("./images/motto.jpg");
+    background-size: cover;
+    background-position: center;
+    /* padding: 30px 10px; */
+    color: white;
+    background-attachment: fixed;
+}
+
+.wrap{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.slogan h1{
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+}
+
+p.text{
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    padding: 30px 10px 15px 10px;
+}
+
+p.author{
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+@media (orientation: landscape){
+    .slogan p{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px){
+    .slogan h1{
+        font-size: 32px;
+    }
+
+    p.text{
+        font-size: 24px;
+    }
+
+    p.author{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px){
+    .slogan h1{
+        font-size: 36px;
+    }
+
+    p.text{
+        font-size: 28px;
+    }
+
+    p.author{
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1440px){
+    .slogan{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
