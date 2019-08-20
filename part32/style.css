@@ -584,3 +584,96 @@ p.author{
         margin: 0 auto;
     }
 }
+
+/* sekcja hobby */
+
+.hobby .item{
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hobby .item:nth-of-type(1){
+    background-image: url('./images/hobby1.jpg');
+}
+
+.hobby .item:nth-of-type(2){
+    background-image: url('./images/hobby2.jpg');
+}
+
+.hobby .item:nth-of-type(3){
+    background-image: url('./images/hobby3.jpg');
+}
+
+.hobby .item:nth-of-type(4){
+    background-image: url('./images/hobby4.jpg');
+}
+
+.hobby .item p{
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 20vh;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+
+.hobby h1{
+    font-family: 'Saira Condensed',sans-serif;
+    text-align: center;
+    font-size: 26px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 533px){
+    .hobby .item{
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item p{
+        line-height: 40vh;
+    }
+
+}
+
+@media (min-width: 768px){
+    .hobby h1{
+        font-size: 34px;
+    }
+
+    .hobby .item p{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px){
+    .hobby .item p{
+        line-height: 40vh;
+        opacity: 0;
+        transition: 0.6s;
+    }
+
+    .hobby .item:hover p{
+        opacity: 1;
+    }
+
+    .hobby .item{
+        background-size: 100%;
+        transition: 0.6s;
+    }
+
+    .hobby .item:hover{
+        background-size: 120%;
+    }
+}
+
+@media (min-width: 1440px){
+    .hobby{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
