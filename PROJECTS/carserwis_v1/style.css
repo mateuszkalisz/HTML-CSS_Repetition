@@ -201,20 +201,22 @@ div.satisfaction p{
 /* sekcja formularzu kontaktowego */
 
 section.contacts{
-    height: 70vh;
+    height: 80vh;
     margin-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('./img/formback.jpg');
+    background-image: url('./img/oilexchange.jpg');
     background-position: center;
     background-size: cover;
     color: white;
 }
 
-section.contacts div{
+section.contacts div.black{
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
 }
 
 section.contacts h1{
-    padding: 30px;
+    padding-top: 50px;
     text-align: center;
     font-size: 3rem;
     color: white;
@@ -223,9 +225,66 @@ section.contacts h1{
 div.contact{
     float: left;
     width: 30%;
+    padding: 0 50px;
+    line-height: 50px;
+}
+
+div.contact p{
+    font-size: 2.4rem;
 }
 
 div.form{
+    padding-top: 30px;
     float: left;
     width: 70%;
+}
+
+div.form form{
+    width: 70%;
+    position: relative;
+}
+
+div.form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+div.form input:focus{
+    box-shadow: 0 0 10px 0 #EFBC62;
+    border: 2px solid #EFBC62;
+}
+
+div.form textarea{
+    height: 200px;
+    width: 100%;
+    line-height: 35px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.form textarea:focus{
+    box-shadow: 0 0 10px 0 #EFBC62;
+    border: 2px solid #EFBC62;
+}
+
+div.form button{
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: #EFBC62;
+    border: none;
+    border-radius: 5px;
+    right: 0;
+}
+
+div.form button:hover{
+    background-color: rgba(	239, 188, 98, 0.8);
 }
