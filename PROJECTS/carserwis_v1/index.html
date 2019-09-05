@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="img/fontello/css/fontello.css">
     <link rel="stylesheet" href="style.css">
 
+    <script type="application/php" src="skrypt.php"></script>
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -85,12 +88,12 @@
                         <p>jan.nowak@car-serwis.pl</p>
                         <p>888 555 333</p>
                     </div>
-                    <div class="form">
+                    <div class="form" action="skrypt.php" method="post">
                         <form>
-                            <input type="text" placeholder="Twoje imię...">
-                            <input type="text" placeholder="Twój email...">
-                            <textarea id="" rows="10" placeholder="Treść wiadomości...""></textarea>
-                            <button>Wyślij</button>
+                            <input class="inputName" type="text" name="firstName" placeholder="Twoje imię...">
+                            <input class="inputEmail" type="text" name="email" placeholder="Twój email...">
+                            <textarea class ="inputContent" rows="10" name="content" placeholder="Treść wiadomości..."></textarea>
+                            <input class="inputButton" type="submit" value="Wyślij"/>
                         </form>
                     </div>
                 </div>
@@ -98,5 +101,6 @@
     </div>
 
     <script src="main.js"></script>
+    <script type="application/php" src="skrypt.php"></script>
 </body>
 </html>

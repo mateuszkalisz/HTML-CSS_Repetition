@@ -172,3 +172,6 @@ const changeSlideLeft = () =>{
 
 rightClick.addEventListener("click", changeSlideRight);
 leftClick.addEventListener("click", changeSlideLeft);
+
+// formularz kontaktowy
+

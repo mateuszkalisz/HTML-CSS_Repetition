@@ -272,11 +272,12 @@ div.form textarea:focus{
     border: 2px solid #EFBC62;
 }
 
-div.form button{
+div.form input[type="submit"]{
     display: block;
     position: absolute;
     text-align: center;
     font-size: 2.2rem;
+    width: 150px;
     padding: 10px 20px;
     text-transform: uppercase;
     background-color: #EFBC62;
@@ -285,6 +286,6 @@ div.form button{
     right: 0;
 }
 
-div.form button:hover{
+div.form input[type="submit"]:hover{
     background-color: rgba(	239, 188, 98, 0.8);
 }
