@@ -175,3 +175,64 @@ leftClick.addEventListener("click", changeSlideLeft);
 
 // formularz kontaktowy
 
+const form = document.getElementById("contactForm");
+
+const inputName = document.querySelector(".inputName");
+const inputEmail = document.querySelector(".inputEmail");
+const inputContent = document.querySelector(".inputContent");
+
+const nameMsg = document.querySelector(".msgName");
+const emailMsg = document.querySelector(".msgEmail");
+const textAreaMsg = document.querySelector(".msgTextArea");
+
+const messages = {
+    msg1: "Nazwa jest za krótka, podaj poprawne imię!",
+    msg2: "Email nieprawidłowy, spróbuj ponownie!",
+    msg3: "Tekst za krótki!",
+}
+
+const checkName = () =>{
+    if(inputName.value.length<3){
+        nameMsg.textContent = messages.msg1;
+    }
+    else{
+        nameMsg.textContent = "";
+    }    
+}
+
+const checkEmail = () =>{
+    if(inputEmail.value.indexOf("@") == -1){
+        emailMsg.textContent = messages.msg2;
+    }
+    else{
+        emailMsg.textContent = "";
+    }
+}
+
+const checkText = () =>{
+    if(inputContent.value.length<10){
+        textAreaMsg.textContent = messages.msg3;
+    }
+    else{
+        textAreaMsg.textContent = "";
+    }
+}
+
+const Validate = () =>{
+    if(inputName.value.length>=3 && inputEmail.value.indexOf("@") != -1 && inputContent.value.length>=10){
+        alert("Formularz został wysłany!");
+    }
+}
+
+const checkForm = (e) =>{
+e.preventDefault();
+
+
+checkName();
+checkEmail();
+checkText();
+
+Validate();
+}
+
+form.addEventListener("submit", checkForm);
