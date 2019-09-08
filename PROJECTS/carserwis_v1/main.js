@@ -218,9 +218,16 @@ const checkText = () =>{
     }
 }
 
+const ClearForm = () =>{
+    inputName.value = "";
+    inputEmail.value = "";
+    inputContent.value = "";
+}
+
 const Validate = () =>{
     if(inputName.value.length>=3 && inputEmail.value.indexOf("@") != -1 && inputContent.value.length>=10){
         alert("Formularz został wysłany!");
+        ClearForm();
     }
 }
 
