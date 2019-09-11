@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    position: absolute;
+    color: white;
+    background-color: brown;
+    font-size: 20px;
+    padding: 10px 20px;
+    top: 200px;
+    left: 50px;
+    text-transform: uppercase;
+}
+
+div:nth-of-type(1){
+    position: absolute;
+    background-color: brown;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    transition: 1.4s;
+}
+
+div:nth-of-type(2){
+    position: absolute;
+    background-color: yellow;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    transition: 1.6s;
+}
+
+div:nth-of-type(3){
+    position: absolute;
+    background-color: yellow;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    transition: 1.6s;
+}
+
+div:nth-of-type(4){
+    position: absolute;
+    background-color: gray;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    transition: 1.6s;
+}
+
+div:nth-of-type(5){
+    position: absolute;
+    background-color: black;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    transition: 1.6s;
+}
+
+span:hover{
+    background-color: black;
+    color: white;
+}
+
+span:hover~div:nth-of-type(1){
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span:hover~div:nth-of-type(2){
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%, -80%);
+}
+
+span:hover~div:nth-of-type(3){
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%, -80%);
+}
+
+span:hover~div:nth-of-type(4){
+    width: 30px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, 42%);
+}
+
+span:hover~div:nth-of-type(5){
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%) rotate(45deg);
+    z-index: -1;
+}
+
