@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        button{
+            display: block;
+        }
+        .bigger, .smaller, .border{ 
+            display: inline-block;
+            margin: 30px;
+        }
+
+        .show{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            line-height: 70px;
+            font-size: 35px;
+            padding: 0 30px;
+            border: 2px solid black;
+            background-color: white;
+            transition: 0.5s;
+        }
+
+        .bigger:hover~.show{
+            font-size: 70px;
+            line-height: 140px;
+        }
+
+        .smaller:hover~.show{
+            font-size: 18px;
+            line-height: 35px;
+        }
+        
+        .border:hover~.show{
+            border: 15px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button class="bigger">2x wiekszy</button>
+    <button class="smaller">2x mniejszy</button>
+    <button class="border">obramowanie</button>
+
+    <button class="show">Przycisk</button>
+</body>
+</html>
