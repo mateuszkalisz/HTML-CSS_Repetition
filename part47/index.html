@@ -28,19 +28,34 @@
             transition: 0.5s;
         }
 
-        .bigger:hover~.show{
+        /* .bigger:hover~.show{
+            font-size: 70px;
+            line-height: 140px;
+        } */
+
+        .duzy{
             font-size: 70px;
             line-height: 140px;
         }
 
-        .smaller:hover~.show{
+        /* .smaller:hover~.show{
+            font-size: 18px;
+            line-height: 35px;
+        } */
+        
+        .maly{
             font-size: 18px;
             line-height: 35px;
         }
-        
-        .border:hover~.show{
+
+        /* .border:hover~.show{
+            border: 15px solid red;
+        } */
+
+        .ramka{
             border: 15px solid red;
         }
+
     </style>
 </head>
 <body>
@@ -49,5 +64,22 @@
     <button class="border">obramowanie</button>
 
     <button class="show">Przycisk</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <script>
+        $('.bigger').click(function(){
+            $('.show').toggleClass('duzy');
+        })
+
+        $('.smaller').click(function(){
+            $('.show').toggleClass('maly');
+        })
+
+        $('.border').click(function(){
+            $('.show').toggleClass('ramka');
+        })
+    </script>
 </body>
 </html>
