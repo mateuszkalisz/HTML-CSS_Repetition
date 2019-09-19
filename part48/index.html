@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>day animation</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #444;
+            animation: sky 5s linear infinite;
+        }
+
+        .sun{
+            position: fixed;
+            bottom: 15%;
+            left: 15%;
+            height: 15vw;
+            width: 15vw;
+            background-color: darkred;
+            border-radius: 100%;
+            animation: sun 5s linear infinite;
+        }
+
+        .grass{
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 30vh;
+            background-color: #222;
+            animation: grass 5s linear infinite;
+        }
+
+        @keyframes sky{
+            0%{
+                background-color: #444;
+            }
+
+            20%{
+                background-color: pink;
+            }
+
+            50%{
+                background-color: lightblue;
+            }
+
+            80%{
+                background-color: pink;
+            }
+
+            100%{
+                background-color: #444;
+            }
+        }
+
+        @keyframes grass{
+            0%{
+                background-color: #222;
+            }
+
+            20%{
+                background-color: lightgreen;
+            }
+
+            50%{
+                background-color: green;
+            }
+
+            80%{
+                background-color: lightgreen;
+            }
+
+            100%{
+                background-color: #222;
+            }
+        }
+
+        @keyframes sun{
+            0%{
+                background-color: darkred;
+                bottom: 15%;
+                left: 10%;
+            }
+
+            20%{
+                background-color: orangered;
+            }
+            
+            50%{
+                background-color: yellow;
+                bottom: 50%;
+            }
+
+            80%{
+                background-color: orangered;
+            }
+
+            100%{
+                background-color: darkred;
+                bottom: 15%;
+                left: 80%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+</html>
