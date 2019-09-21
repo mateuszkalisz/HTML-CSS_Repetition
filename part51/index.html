@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+    }
+    div{
+        position: relative;
+        background-color: blue;
+        width: 20vw;
+        height: 20vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        line-height: 100%;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+        color: white;
+        animation: move 10s infinite both;
+    }
+
+    /* h1+h1{
+        display: none;
+    } */
+
+    h1:nth-of-type(2){
+        animation-delay: 3.3s;
+    }
+    h1:nth-of-type(3){
+        animation-delay: 6.6s;
+    }
+
+
+    @keyframes move{
+        0%{
+            transform: translate(-150%,-50%);
+        }
+        3%{
+            transform: translate(-150%,-50%);
+        }
+        6%{
+            transform: translate(-50%,-50%);
+        }
+        30%{
+            transform: translate(-50%,-50%);
+        }
+        33%{
+            transform: translate(150%,-50%);
+        }
+        100%{
+            transform: translate(150%,-50%);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div>    
+        <h1>Tanio</h1>
+        <h1>Średnio</h1>
+        <h1>Drogo</h1>
+    </div>
+</body>
+</html>
