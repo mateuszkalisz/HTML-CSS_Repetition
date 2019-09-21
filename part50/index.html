@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    button{
+        position: absolute;
+        bottom: 10%;
+        left: 60%;
+        border: 2px solid black;
+        background-color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 30px;
+        padding: 10px 20px;
+        height: 100px;
+        width: 360px;
+        overflow: hidden;
+
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        transition: 0.3s;
+    }
+
+    span:nth-child(2){
+        left: 150%;
+        width: 360px;
+    }
+
+    button:hover span:nth-child(1){
+        left: -150%;
+    }
+
+    button:hover span:nth-child(2){
+        left: 50%;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <button><span>Kup teraz</span> <span>Super okazja</span></button>
+</body>
+</html>
