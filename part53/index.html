@@ -7,19 +7,54 @@
     <title>Document</title>
 
     <style>
+
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        img{
-            position: absolute;
-            width: 1920px;
-            height: 1080px;
+        header{
+            position: relative;
+            width: 100%;
+            height: 600px;
             top: 0;
             left: 0;
         }
+
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        h1{
+            position: absolute;
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            font-size: 100px;
+            padding: 20px 30px;
+            top: 30%;
+            left: 70%;
+            opacity: 0;
+            animation: banner 8s infinite both;
+        }
+
+        h2{
+            position: absolute;
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            font-size: 100px;
+            padding: 20px 30px;
+            top: 70%;
+            left: 50%;
+            opacity: 0;
+            animation: banner 8s 4s infinite both;
+        }
+
 
         img:nth-of-type(1){
             opacity: 0;
@@ -58,7 +93,12 @@
     </style>
 </head>
 <body>
-    <img src="img1.jpg" alt="">
-    <img src="img2.jpg" alt="">
+    <header>
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <h1>Super</h1>
+        <h2>Hiper</h2>
+    </header>
+
 </body>
 </html>
