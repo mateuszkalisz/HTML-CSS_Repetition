@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bell{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    font-size: 80px;
+    height: 120px;
+    width: 120px;
+    border: 7px solid cadetblue;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    color: cadetblue;
+    transition: 0.2s;
+}
+
+.bell:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.bell i{
+    transform-origin: 50% 0;
+    animation: motion 0.5s linear infinite alternate;
+    transition: 0.2s;
+}
+
+.bell:hover i{
+    color: white;
+    animation-play-state: paused;
+}
+
+@keyframes motion{
+    0%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
