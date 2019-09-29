@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* bell icon */
+
 .bell{
     position: fixed;
     bottom: 100px;
@@ -43,4 +45,50 @@
     100%{
         transform: rotate(15deg);
     }
+}
+
+/* arrow icon */
+
+.arrow{
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 120px;
+    font-size: 80px;
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.arrow i{
+    text-shadow: 0 -35px 0 white, 0 -70px 0 white;
+    animation: arrowMove 0.7s linear infinite;
+    transition: 0.3s;
+}
+
+@keyframes arrowMove{
+    0%{
+        transform: translateY(-80px);
+    }
+    100%{
+        transform: translateY(150px);
+    }
+}
+
+.arrow:hover{
+    background-color: white;
+    border: 7px solid royalblue;
+    cursor: pointer;
+}
+
+.arrow:hover i{
+    animation-duration: 0.4s;
+    text-shadow: 0 -35px 0 royalblue, 0 -70px 0 royalblue;
+    color: royalblue;
 }
