@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator v2 - training flexbox</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+            display: flex;
+            height: 100vh;
+            border: 5px solid black;
+            flex-direction: column;
+        }
+        .result{
+            flex-basis: 10%;
+            background-color: #444;
+        }
+        .panel{
+            display: flex;
+            background-color: royalblue;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        .panel div{
+            display: flex;
+            font-size: 100px;
+            width: 30%;
+            border: 3px solid black;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="result"></div>
+    <div class="panel">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+        <div>0</div>
+        <div>-</div>
+        <div>/</div>
+        <div>.</div>
+        <div>*</div>
+        <div>C</div>
+        <div>=</div>
+    </div>
+</body>
+</html>
