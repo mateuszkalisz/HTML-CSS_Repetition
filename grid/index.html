@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS GRID</title>
+
+    <style>
+        body{
+            display: grid;      
+            margin: 0;
+            font-size: 40px;
+            min-height: 100vh;
+            color: white;
+            grid-template-columns: 1fr 300px;
+            grid-template-rows: 300px 100px 1fr 50px;
+            grid-template-areas:
+            "banner banner"
+            "menu menu"
+            "blog column"
+            "footer footer";
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+        
+        header{
+            grid-area: banner;
+            background-color: #333;
+        }
+
+        nav{
+            grid-area: menu;
+            background-color: #432;
+        }
+
+        main{
+            grid-area: blog;
+            background-color: #673;
+        }
+        aside{
+            grid-area: column;
+            background-color: #878;
+        }
+        footer{
+            grid-area: footer;
+            background-color: #383;
+        }
+
+        @media(max-width: 1024px){
+            body{
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px 100px 1fr 200px 50px;
+            grid-template-areas:
+            "banner"
+            "menu"
+            "blog"
+            "column"
+            "footer";
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>footer</footer>
+</body>
+</html>
