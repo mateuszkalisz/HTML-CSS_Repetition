@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            const $p = $('p');
+            console.log($p.length);
+            console.log($('p:nth-of-type(2)').html());
+            const $titleH1 = $('<h1>Naglowek</h1>');
+            // $('body').append($titleH1);
+            // $('div').before($titleH1);
+            // $('div').after($titleH1);
+            // $('div').prepend($titleH1);
+            // $($titleH1).prependTo($('div'));
+            // $($titleH1).appendTo($('div'));
+
+            // document.body.appendChild($titleH1[0]);
+
+            
+            // console.log($('[data-idUser]').attr('id'));
+
+            console.log($('[data-idUser]').removeAttr('id'));
+        })
+    </script>
+
+</head>
+<body>
+    <div class="item1">Div item1</div>
+    <div class="item2">Div item2</div>
+    <div data-idUser="1930" id='aaa'>Item 3</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eligendi consequuntur sed alias, unde numquam quam, facilis eum quibusdam voluptate fugit aspernatur veniam odio aliquid? Ea soluta quo labore veniam a ipsa culpa iure quisquam tempore blanditiis suscipit deserunt quos temporibus, nam reprehenderit ipsum facere quod fugit exercitationem recusandae? Quidem excepturi repudiandae voluptatum itaque. Illum blanditiis sint aut nulla. Nulla aperiam amet provident! Delectus autem quam rerum tempora voluptatem obcaecati molestiae? Possimus, ipsam molestiae cumque soluta delectus corporis odit at? Amet vel perferendis iste quod odit? Eaque, adipisci optio. Id, labore accusamus voluptatibus autem ut cumque porro nam sunt! Quod.</p>
+    <p>Lorem ipsum.</p>
+
+    <!-- <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script> -->
+
+    <script>
+        // console.log($('*'));
+        // console.log($('.item1').text());
+    </script>
+</body>
+</html>
