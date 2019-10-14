@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        section{
+            display: flex;
+            height: 10vh;
+            justify-content: space-around;
+            /* background-color: blue; */
+
+        }
+
+        .interface{
+            flex-basis: 24%;
+            border: 10px solid brown;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .plus{
+            background-color: white;
+            font-size: 100px;
+            color: black;
+            text-align: center;
+        }
+        .move{
+            background-color: white;
+            font-size: 100px;
+            color: black;
+            text-align: center;
+        }
+
+        .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 150px;
+            color: white;
+        }
+
+        .interface:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="orange interface"></div>
+        <div class="green interface"></div>
+        <div class="plus interface">+</div>
+        <div class="move interface">-></div>
+    </section>
+    <p class="text">Tekst</p>
+
+    <!-- <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> -->
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
