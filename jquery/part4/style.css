@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    margin: 20px 150px 20px 50px;
+    font-size: 30px;
+    text-align: justify;
+    transition: 0.2s;
+}
+
+.wrapper.active{
+    padding-left: 500px;
+}
+
 .burger{
     position: absolute;
     top: 50px;
