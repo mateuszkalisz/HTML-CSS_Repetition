@@ -10,10 +10,10 @@
     right: 50px;
     font-size: 70px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100px;
-    width: 100px;
-    border: 5px solid black;
-    border-radius: 50%;
+    /* height: 100px; */
+    /* width: 100px; */
+    /* border: 5px solid black; */
+    /* border-radius: 50%; */
     text-align: center;
     line-height: 100px;
     transition: 0.2s;
@@ -33,11 +33,16 @@ aside{
     transition: 0.2s;
 }
 
-.active{
-    transform: rotate(405deg);
+.fas{
+    display: none;
 }
 
-.burger.active + aside{
+.active{
+    /* transform: rotate(405deg); */
+    display: block;
+}
+
+.asideMenu{
     left: 0;
 }
 
