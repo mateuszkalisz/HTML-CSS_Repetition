@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+.wrapper{
+    font-size: 30px;
+    text-align: justify;
+    margin: 30px 150px 30px 50px;
+    transition: 0.2s;
+}
+
+.wrapper.active{
+    padding-left: 500px;
+}
+
 .burger{
     position: absolute;
     top: 50px;
@@ -42,7 +53,7 @@ aside{
     display: block;
 }
 
-.asideMenu{
+aside.active{
     left: 0;
 }
 
