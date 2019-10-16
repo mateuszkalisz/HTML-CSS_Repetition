@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.wrapper{
+    padding: 30px 180px;
+    font-size: 42px;
+    text-align: justify;
+    transition: 0.2s;
+    line-height: 80px;
+}
+
+.burger{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 100px;
+    z-index: 1;
+}
+
+.burger:hover{
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+}
+
+.fas{
+    display: none;
+    transition: 0.1s;
+}
+
+.show{
+    display: block;
+}
+
+.fa-times.show{
+    color: white;
+}
+
+.fa-times.show:hover{
+    color: rgba(255,255,255,0.5);
+}
+
+
+nav{
+    position: fixed;
+    top: -400px;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    transition: 0.2s;
+}
+
+nav.show{
+    top: 0;
+}
+
+.wrapper.show{
+    padding-top: 400px;
+}
