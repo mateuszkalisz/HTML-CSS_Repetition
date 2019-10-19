@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/e82defed8f.js" crossorigin="anonymous"></script>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav{
+        display: flex;
+        padding: 20px;
+    }
+
+    nav a{
+        flex-basis: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+
+    .s1{
+        height: 110vh;
+        background-color: cadetblue;
+    }
+
+    .s2{
+        height: 120vh;
+        background-color: cornflowerblue;
+    }
+
+    .s3{
+        height: 100vh;
+        background-color: darkkhaki;
+    }
+
+    .s4{
+        height: 130vh;
+        background-color: darksalmon;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+
+    button{
+        position: fixed;
+        bottom: 100px;
+        right: 100px;
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border: 5px solid black;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="me">O mnie</a>
+        <a href="#" class="portfolio">Portfolio</a>
+        <a href="#" class="offer">Oferta</a>
+        <a href="#" class="contact">Kontakt</a>
+    </nav>
+
+    <section id="me" class="s1"></section>
+    <section id="portfolio" class="s2"></section>
+    <section id="offer" class="s3"></section>
+    <section id="contact" class="s4"></section>
+
+    <footer>
+        <p>Stopka</p>
+    </footer>
+
+    <button>
+            <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $('.me').on('click', function(){
+          $('body, html').animate({
+              'scrollTop': $('.s1').offset().top,
+          },300)
+      })
+
+      $('.portfolio').on('click', function(){
+          $('body, html').animate({
+              'scrollTop': $('.s2').offset().top,
+          },800)
+      })
+
+      $('.offer').on('click', function(){
+          $('body, html').animate({
+              'scrollTop': $('.s3').offset().top,
+          },1300)
+      })
+
+      $('.contact').on('click', function(){
+          $('body, html').animate({
+              'scrollTop': $('.s4').offset().top,
+          },1200)
+      })
+
+      $('button').on('click', function(){
+          $('body, html').animate({
+              'scrollTop': $('nav').offset().top,
+          }, 1000)
+      })
+  </script>
+</body>
+</html>
