@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cs1{
+            height: 70vh;
+            background-color: blueviolet;
+        }
+
+        .cs2{
+            height: 70vh;
+            background-color: aquamarine;
+        }
+
+        .cs3{
+            height: 70vh;
+            background-color: chocolate;
+        }
+
+        .cs4{
+            height: 70vh;
+            background-color: rosybrown;
+        }
+
+        .footer{
+            position: fixed;
+            bottom: -150;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            font-size: 100px;
+            background-color: cornsilk;
+            text-align: center;
+        }
+
+        .footer.active{
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cs1"></div>
+    <div class="cs2"></div>
+    <div class="cs3"></div>
+    <div class="cs4"></div>
+    <div class="footer"></div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $(window).on('scroll', function(){
+          if($(window).scrollTop()>200){
+            $('.footer').addClass('active');
+          }
+          else{
+            $('.footer').removeClass('active');
+          }
+        //   console.log($(window).scrollTop())
+          $('.footer').text($(window).scrollTop().toFixed(2));
+      })
+  </script>
+</body>
+</html>
