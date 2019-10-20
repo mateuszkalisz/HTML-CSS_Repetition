@@ -109,35 +109,107 @@
   crossorigin="anonymous"></script>
 
   <script>
-      $('.me').on('click', function(){
-          $('body, html').animate({
-              'scrollTop': $('.s1').offset().top,
-          },300)
-      })
+    //   $('.me').on('click', function(){
+    //       $('body, html').animate({
+    //           'scrollTop': $('.s1').offset().top,
+    //       },300)
+    //   })
 
-      $('.portfolio').on('click', function(){
-          $('body, html').animate({
-              'scrollTop': $('.s2').offset().top,
-          },800)
-      })
+    //   $('.portfolio').on('click', function(){
+    //       $('body, html').animate({
+    //           'scrollTop': $('.s2').offset().top,
+    //       },800)
+    //   })
 
-      $('.offer').on('click', function(){
-          $('body, html').animate({
-              'scrollTop': $('.s3').offset().top,
-          },1300)
-      })
+    //   $('.offer').on('click', function(){
+    //       $('body, html').animate({
+    //           'scrollTop': $('.s3').offset().top,
+    //       },1300)
+    //   })
 
-      $('.contact').on('click', function(){
-          $('body, html').animate({
-              'scrollTop': $('.s4').offset().top,
-          },1200)
-      })
+    //   $('.contact').on('click', function(){
+    //       $('body, html').animate({
+    //           'scrollTop': $('.s4').offset().top,
+    //       },1200)
+    //   })
 
       $('button').on('click', function(){
           $('body, html').animate({
               'scrollTop': $('nav').offset().top,
           }, 1000)
       })
+
+      //pierwszy krotszy sposob:
+
+    //   $('nav a').on('click', function(){
+    //       const variable = $(this).attr('class');
+    //       if(variable =='me'){
+    //         $('body, html').animate({
+    //           'scrollTop': $('.s1').offset().top,
+    //       },300)
+    //       }
+          
+    //       else if(variable == 'portfolio'){
+    //         $('body, html').animate({
+    //           'scrollTop': $('.s2').offset().top,
+    //       },800)
+    //       }
+    //       else if(variable == 'offer'){
+    //         $('body, html').animate({
+    //           'scrollTop': $('.s3').offset().top,
+    //       },1300)
+    //       }
+    //       else if(variable =='contact'){
+    //         $('body, html').animate({
+    //           'scrollTop': $('.s4').offset().top,
+    //       },1200)
+    //       }
+    //   })
+
+      //drugi krotszy
+
+    //   $('nav a').on('click', function(){
+    //       const cls = $(this).attr('class');
+    //       switch(cls){
+    //           case 'me':{
+    //             $('body, html').animate({
+    //           'scrollTop': $('.s1').offset().top,
+    //       },300)
+    //       break;
+    //           }
+    //           case 'portfolio':{
+    //             $('body, html').animate({
+    //           'scrollTop': $('.s2').offset().top,
+    //       },800)
+    //       break;
+    //           }
+    //           case 'offer':{
+    //             $('body, html').animate({
+    //           'scrollTop': $('.s3').offset().top,
+    //       },1300)
+    //       break;  
+    //           }
+    //           case 'contact':{
+    //             $('body, html').animate({
+    //           'scrollTop': $('.s4').offset().top,
+    //       },1200)
+    //       break;
+    //           }
+    //       }
+    //   })
+
+//trzeci krotszy
+
+$('nav a').on('click',function(){
+    const goToSection = '#' + $(this).attr('class');
+    $('html, body').animate({
+        scrollTop: $(goToSection).offset().top,
+    },1000)
+})
+
+
+
+
   </script>
 </body>
 </html>
