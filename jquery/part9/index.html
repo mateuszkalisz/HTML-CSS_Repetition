@@ -58,38 +58,64 @@
     <section class="s3"></section>
     <section class="s4"></section>
 
-    <script
+    <!-- <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
 
   <script>
-      
-      $(window).on('scroll', function(){
-        const s1 = $('.s1').offset().top;
-        const s2 = $('.s2').offset().top;
-        const s3 = $('.s3').offset().top;
-        const s4 = $('.s4').offset().top;
+    window.addEventListener('scroll', function(){
+        const s1 = document.body.querySelector('.s1').offsetTop;
+        const s2 = document.body.querySelector('.s2').offsetTop;
+        const s3 = document.body.querySelector('.s3').offsetTop;
+        const s4 = document.body.querySelector('.s4').offsetTop;
 
-        const pagePosition = $(window).scrollTop();
-        const infoHeight = $('.info').outerHeight();
-        
-        if(pagePosition == 0){
-            $('.info').text('WITAJ NA STRONIE');
+        const pagePosition = window.scrollY;
+        const infoHeight = document.body.querySelector('.info').offsetHeight;
+        const info = document.body.querySelector('.info'); 
+
+        if(pagePosition==0){
+            info.textContent = 'Witaj na stronie';
         }
         else if(pagePosition<s2-infoHeight){
-            $('.info').text('sekcja s1');
+            info.textContent = 'sekcja s1';
         }
         else if(pagePosition<s3-infoHeight){
-            $('.info').text('sekcja s2');
+            info.textContent = 'sekcja s2';
         }
         else if(pagePosition<s4-infoHeight){
-            $('.info').text('sekcja s3');
+            info.textContent = 'sekcja s3';
         }
         else if(pagePosition>=s4-infoHeight){
-            $('.info').text('sekcja s4');
+            info.textContent = 'sekcja s4';
         }
-      })
+    })
+
+    //   $(window).on('scroll', function(){
+    //     const s1 = $('.s1').offset().top;
+    //     const s2 = $('.s2').offset().top;
+    //     const s3 = $('.s3').offset().top;
+    //     const s4 = $('.s4').offset().top;
+
+    //     const pagePosition = $(window).scrollTop();
+    //     const infoHeight = $('.info').outerHeight();
+        
+    //     if(pagePosition == 0){
+    //         $('.info').text('WITAJ NA STRONIE');
+    //     }
+    //     else if(pagePosition<s2-infoHeight){
+    //         $('.info').text('sekcja s1');
+    //     }
+    //     else if(pagePosition<s3-infoHeight){
+    //         $('.info').text('sekcja s2');
+    //     }
+    //     else if(pagePosition<s4-infoHeight){
+    //         $('.info').text('sekcja s3');
+    //     }
+    //     else if(pagePosition>=s4-infoHeight){
+    //         $('.info').text('sekcja s4');
+    //     }
+    //   })
   </script>
 </body>
 </html>
