@@ -44,13 +44,12 @@ $(document).on('scroll', function(){
         $art4.addClass('active');
     }
 
-    if(scrollBottom > ($op1FromTop+$art4Height)){
+    if(scrollBottom > ($op1FromTop+$art4Height/3)){
         $op1.addClass('active');
     }
 
-    if(scrollBottom > ($op2FromTop+$op1Height)){
+    if(scrollBottom > ($op2FromTop+$op1Height/5)){
         $op2.addClass('active');
     }
-
 
 })
