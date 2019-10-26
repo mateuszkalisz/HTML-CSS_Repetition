@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-family: 'Oswald', sans-serif;
+            font-size: 10px;
+        }
+
+        .team{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .team img.color{
+            position: absolute;
+            bottom: 0;
+            right: -10%;
+            height: 30%;
+            z-index: 1;
+            animation: color 4s linear infinite;
+        }
+
+        .team img.gray{
+            position: absolute;
+            bottom: 0;
+            right: -70%;
+            height: 110%;
+            opacity: 0.2;
+            animation: gray 4s linear infinite;
+        }
+
+        .team .member{
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: text 4s linear infinite;
+        }
+
+        .team .member h1{
+            font-size: 3.6rem;
+        }
+
+        .team .member h2{
+            font-size: 2.2rem;
+        }
+
+        @keyframes color{
+            0%{
+                transform: translateX(0);
+                opacity: 0;
+            }
+            
+            8%{
+                opacity: 0;
+            }
+
+            13%{
+                opacity: 1;
+            }
+
+            87%{
+                opacity: 1;
+            }
+
+            92%{
+                opacity: 0;
+            }
+
+            100%{
+                transform: translateX(-5%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes gray{
+            0%{
+                transform: translateX(0) scale(1);
+                opacity: 0;
+            }
+            
+            8%{
+                opacity: 0;
+            }
+
+            13%{
+                opacity: 0.2;
+            }
+
+            87%{
+                opacity: 0.2;
+            }
+
+            92%{
+                opacity: 0;
+            }
+
+            100%{
+                transform: translateX(5%) scale(1.1);
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes text{
+            0%{
+                transform: scale(1);
+                opacity: 0;
+            }
+            
+            8%{
+                opacity: 0;
+            }
+
+            13%{
+                opacity: 1;
+            }
+
+            87%{
+                opacity: 1;
+            }
+
+            92%{
+                opacity: 0;
+            }
+
+            100%{
+                transform: scale(1.1);
+                opacity: 0;
+            }
+        }
+
+        @media (orientation: landscape){
+            .team img.gray{
+                right: -10%;
+            }
+
+            .team img.color{
+                right: 0%;
+                height: 50%;
+            }
+        }
+
+        @media (min-height: 800px){
+            .team .member h1{
+            font-size: 8rem;
+        }
+
+        .team .member h2{
+            font-size: 5.2rem;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="team">
+        <img src="img/s1.png" alt="dziewczyna 1" class="color">
+        <img src="img/s1a.png" alt="dziewczyna 1a" class="gray">
+        <div class="member">
+            <h1>Anna Baugard</h1>
+            <h2>Programistka JS</h2>
+        </div>
+    </section>
+</body>
+</html>
