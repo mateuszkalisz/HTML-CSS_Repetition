@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Galeria</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+ <section class="gallery">
+  <div class="title">
+   <h1>Moje ulubione</h1>
+   <h1>portale internetowe</h1>
+  </div>
+  <div class="images">
+   <a href="img/1.jpg" data-lightbox='img1' data-title='strona nr 1'><img src="img/thumb1.jpg" alt="miniatura"></a>
+   <a href="img/2.jpg" data-lightbox='img1' data-title='strona nr 2'><img src="img/thumb2.jpg" alt="miniatura"></a>
+   <a href="img/3.jpg" data-lightbox='img3'><img src="img/thumb3.jpg" alt="miniatura"></a>
+   <a href="img/4.jpg" data-lightbox='img4'><img src="img/thumb4.jpg" alt="miniatura"></a>
+   <a href="img/5.jpg" data-lightbox='img5'><img src="img/thumb5.jpg" alt="miniatura"></a>
+   <a href="img/6.jpg" data-lightbox='img6'><img src="img/thumb6.jpg" alt="miniatura"></a>
+   <a href="img/7.jpg" data-lightbox='img7'><img src="img/thumb7.jpg" alt="miniatura"></a>
+   <a href="img/8.jpg" data-lightbox='img8'><img src="img/thumb8.jpg" alt="miniatura"></a>
+  </div>
+
+ </section>
+ <script
+ src="https://code.jquery.com/jquery-3.4.1.min.js"
+ integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+ crossorigin="anonymous"></script>
+ <script src="dist/js/lightbox.js"></script>
+ <script>
+    lightbox.option({
+      'albumLabel': 'Zdjęcie %1 z %2'
+    })
+</script>
+</body>
+
+</html>
