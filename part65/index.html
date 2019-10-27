@@ -164,9 +164,9 @@
             font-size: 8rem;
         }
 
-        .team .member h2{
+            .team .member h2{
             font-size: 5.2rem;
-        }
+            }
         }
 
     </style>
@@ -180,5 +180,77 @@
             <h2>Programistka JS</h2>
         </div>
     </section>
+
+    <script>
+
+    const color = document.querySelector('.color');
+    const gray = document.querySelector('.gray');
+    const h1HTML = document.querySelector('.member h1');
+    const h2HTML = document.querySelector('.member h2');
+    
+    const colorImages = [
+        {
+            src: 'img/s1.png',
+            alt: 'dziewczyna 1',
+        },
+        {
+            src: 'img/s2.png',
+            alt: 'dziewczyna 2',
+        },
+        {
+            src: 'img/s3.png',
+            alt: 'dziewczyna 3',
+            name: 'Henry Ford',
+        }
+    ]
+
+    const grayImages = [
+    {
+            src: 'img/s1a.png',
+            alt: 'dziewczyna 1a',
+        },
+        {
+            src: 'img/s2a.png',
+            alt: 'dziewczyna 2a',
+        },
+        {
+            src: 'img/s3.png',
+            alt: 'dziewczyna 3a',
+        }
+    ]
+
+    const contentImages = [
+        {
+            name: 'Anna Baugard',
+            profession: 'Programistka JS'
+        },
+        {
+            name: 'Paulo Coehlo',
+            profession: 'Fulstack Dev'
+        },
+        {
+            name: 'Henry Ford',
+            profession: 'Engineer'
+        }
+    ]
+
+    let iterator = 1;
+
+    const bannerChanger = () =>{
+        color.src = colorImages[iterator].src;
+        color.alt = colorImages[iterator].alt;
+        gray.src = grayImages[iterator].src;
+        gray.alt = grayImages[iterator].alt;
+        h1HTML.textContent = contentImages[iterator].name;
+        h2HTML.textContent = contentImages[iterator].profession;
+
+        if(iterator <2) iterator+=1;
+        else iterator = 0;
+    }
+
+    setInterval(bannerChanger, 4000);
+    
+    </script>
+
 </body>
 </html>
