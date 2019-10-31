@@ -1,0 +1,19 @@
+header
+    height: 30vh
+    color: $font-color
+    h1
+     position: absolute
+     top: 50%
+     left: 50%
+     transform: translate(-50%,-50%)
+     font-size: 80px
+    div
+     &.small
+      background-color: $bg-colorr
+      +circle(50px, 50%)
+     &.medium
+      background-color: $bg-colorb
+      +circle(100px, 40%)
+     &.large
+      background-color: $bg-colorg
+      +circle(150px, 30%)
