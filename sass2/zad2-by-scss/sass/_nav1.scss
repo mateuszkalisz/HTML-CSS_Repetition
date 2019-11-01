@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    @mixin box-flex(row,space-around);
+    li{
+        a{
+            background-color: black;
+            text-decoration: none;
+            color: $text-color;
+            padding: 10px 20px;
+        }
+    }
+}

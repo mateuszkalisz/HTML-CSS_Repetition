@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;EDAnB,OAAO,EAAE,IAAI;EACb,cAAc,ECAO,GAAG;EDCxB,eAAe,ECDU,YAAY;CAMD;;AARrC,AAIQ,EAJN,CAGE,EAAE,CACE,CAAC,CAAC;EACE,gBAAgB,EAAE,KAAK;EACvB,eAAe,EAAE,IAAI;EACrB,KAAK,EFPJ,KAAK;EEQN,OAAO,EAAE,SAAS;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_variable.sass",
+        "../sass/_mixins.sass",
+        "../sass/_nav1.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
